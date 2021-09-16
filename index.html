@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>St-desing</title>
+    <link rel="icon" href="./img/Isotipo nuevo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- CSS de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark color-st-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img src="img/st_isotipo.png" alt="logo-St" srcset=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links"
+          aria-controls="links"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown" id="myDropdown">
+                  <a
+                    class="nav-link"
+                    href="#section1"
+                    data-bs-toggle="dropdown"
+                  >
+                    Productos
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- navbar-collapse.// -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contacto-modal"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social-network">
+          <div class="soial-icons">
+            <a class="mx-1" href="https://www.instagram.com/stdesign2020/"
+              ><i
+                class="fa fa-instagram"
+                style="font-size: 30px; color: white"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleFad"
+      class="carousel slide carousel-fade "
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="img/carrousel/key-chain_1.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/IMG_5336.jpg" class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/rainbow_1.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/rainbow_2.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/rainbow_3.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/rainbow_4.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/lamp_2.jpg"class="w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel/lamp_3.jpg"class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <section class="section mb-5 products" data-section="section1">
+      <div class="container mt-3" id="products">
+        <h1>Productos</h1>
+        <div class="row">
+          <div class="col prod-cards m-2" v-for="prod in prods">
+            <div class="prods card m-3" id="prod.id">
+              <a href="/rainbow.html">
+              <img v-bind:src="prod.image" alt="" />
+              <button class="btn btn-prod color-st-primary" >
+                <i class="fa fa-cart-plus"></i>
+                Comprar
+              </button></a>
+              <button class="btn btn-prod color-st-secondary">
+                <i class="fa fa-share"></i>
+                Compartir
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer">
+      <div class="container-fluid color-st-primary py-3">
+        <div class="row">
+          <div class="col-md-3">
+            <a class="footer-brand" href="/index.html"
+              ><img src="img/st_isotipo.png" alt="logo-St" srcset=""
+            /></a>
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#section2">Productos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contacto-modal"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 text-white">
+            <a href="https://github.com/Martinez-Latorraca">
+              <p>Copyright &copy; Nicolas Martinez-Latorraca</p>
+            </a>
+            <div class="soial-icons">
+              <a class="mx-1" href="https://github.com/Martinez-Latorraca">
+                <i
+                  class="fa fa-github"
+                  style="font-size: 36px; color: white"
+                ></i
+              ></a>
+
+              <a
+                class="mx-1"
+                href="https://www.linkedin.com/in/nicol%C3%A1s-mart%C3%ADnez-latorraca/"
+                ><i
+                  class="fa fa-linkedin"
+                  style="font-size: 36px; color: white"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Footer -->
+
+    <div
+      id="contacto-modal"
+      class="modal fade"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contacto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/meqvvpwa"
+              method="POST"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  value=""
+                  class="form-control"
+                  placeholder="Ingresar nombre completo..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value=""
+                  class="form-control"
+                  placeholder="Ingresar Email..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  name="message"
+                  rows="8"
+                  cols="40"
+                  class="form-control"
+                  placeholder="Ingresar mensaje..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+              type="button submit"
+              class="btn color-st-primary"
+              >
+              Enviar
+            </button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS de Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- JS Propio -->
+    <script src="js/prods.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
